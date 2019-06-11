@@ -58,4 +58,9 @@ if __name__ == "__main__":
   secret = raw_input("URL signing secret: ")
   print "Signed URL: " + sign_url(input_url, secret)
       
+URL : https://maps.googleapis.com/maps/api/geocode/json?address=New+York&client=clientID
+Clave privada : AIzaSyAYVHSbEo-Rh1qBeOOk_BKiXns7bzVniyQ
+URL de la porción a firmar : /maps/api/geocode/json?address=New+York&client=clientID
+Firma : chaRF2hTJKOScPr-RQCEhZbSzIE=
+URL completa firmada : https://maps.googleapis.com/maps/api/geocode/json?address=New+York&client=clientID&signature=AIzaSyAYVHSbEo-Rh1qBeOOk_BKiXns7bzVniyQ
       
