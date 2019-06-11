@@ -1,0 +1,21 @@
+import pymongo
+
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+
+mydb = myclient["servinformacion"] ¨¨Aquí, se crea servicios web en Python ¨¨
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  passwd="yourpassword",
+  database="servinformacion"
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("CREATE TABLE Persons (LastName varchar(255), FirstName varchar(255), Address varchar(255))") 
+mycursor.execute("CREATE TABLE geolocation (CityID int,Long number(255),Latitud number(255),Statusgeo varchar(255))") 
+
+ 
