@@ -1,0 +1,15 @@
+CREATE DATABASE servinformacion;
+
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+); --- Aquí, Tabla Persons contiene datos de contacto.
+
+CREATE TABLE geolocation (
+    CityID int,
+    Long number(255),
+    Latitud number(255),
+    Statusgeo varchar(255), 
+); --- Aquí, Tabla Geolocation contiene datos de geoposición 
